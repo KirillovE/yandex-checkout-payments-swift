@@ -55,13 +55,13 @@ class ActionTemplate: UIControl {
         }
     }
 
-    private var styles: [UInt: Style] = [:]
+    private var styles: [UInt: YandexStyle] = [:]
 
     /// Sets the style to use for the specified state.
     ///
     /// - Parameter style: The style to use for the specified state.
     ///             state: The state that uses the specified style.
-    func setStyle(_ style: Style, for state: UIControl.State) {
+    func setStyle(_ style: YandexStyle, for state: UIControl.State) {
         styles[state.rawValue] = style
         if styledState == state {
             updateContent(for: state)
