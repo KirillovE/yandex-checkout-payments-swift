@@ -72,8 +72,8 @@ final class ContractTemplate: UIViewController {
 
     private var backgroundStyle = UIView.Styles.grayBackground
 
-    private lazy var blurEffectStyle: UIBlurEffect.Style = {
-        let style: UIBlurEffect.Style
+    private lazy var blurEffectStyle: UIBlurEffect.YandexStyle = {
+        let style: UIBlurEffect.YandexStyle
         if #available(iOS 13.0, *) {
             style = .systemUltraThinMaterial
         } else {
@@ -89,7 +89,7 @@ final class ContractTemplate: UIViewController {
     }()
 
     fileprivate lazy var titleLabel: UILabel = {
-        let style: Style
+        let style: YandexStyle
         if #available(iOS 9.0, *) {
             style = UILabel.DynamicStyle.title2
         } else {

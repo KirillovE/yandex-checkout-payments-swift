@@ -9,8 +9,8 @@ final class PaymentMethodsViewController: UIViewController, PlaceholderProvider 
 
     // MARK: - Subviews properties
 
-    private lazy var blurEffectStyle: UIBlurEffect.Style = {
-        let style: UIBlurEffect.Style
+    private lazy var blurEffectStyle: UIBlurEffect.YandexStyle = {
+        let style: UIBlurEffect.YandexStyle
         if #available(iOS 13.0, *) {
             style = .systemUltraThinMaterial
         } else {
